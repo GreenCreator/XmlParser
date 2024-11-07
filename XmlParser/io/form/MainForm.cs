@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
-using XmlToDB.io.controller;
+using Xml.io.controller;
 
-namespace XmlToDB.io.form
+namespace Xml.io.form
 {
     public class MainForm : Form
     {

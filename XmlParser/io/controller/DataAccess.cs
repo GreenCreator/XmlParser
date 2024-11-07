@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Text;
-using XmlToDB.io.helper;
+using Xml.io.helper;
 
-namespace XmlToDB.io.controller;
+namespace Xml.io.controller;
 
 public class DataAccess
 {

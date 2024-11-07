@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Windows.Forms;
-using XmlToDB.io.form;
+using Xml.io.form;
 
 static class Program
 {

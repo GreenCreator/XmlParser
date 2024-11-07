@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Xml;
 
-namespace XmlToDB.io.controller;
+namespace Xml.io.controller;
 
 public class XmlParser
 {

@@ -4,7 +4,7 @@ using System.Windows.Forms;
 using System.Xml;
 using System.Xml.Xsl;
 
-namespace XmlToDB.io.controller;
+namespace Xml.io.controller;
 
 public class HtmlRenderer
 {

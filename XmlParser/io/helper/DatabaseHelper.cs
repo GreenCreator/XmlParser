@@ -2,7 +2,7 @@
 using System.Data.SQLite;
 using System.IO;
 
-namespace XmlToDB.io.helper
+namespace Xml.io.helper
 {
     public class DatabaseHelper
     {

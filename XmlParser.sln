@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlToDB", "XmlToDB\XmlToDB.csproj", "{1E68D263-A8C8-49A3-85E8-BA86FB651A6F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlParser", "XmlParser\XmlParser.csproj", "{1E68D263-A8C8-49A3-85E8-BA86FB651A6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
