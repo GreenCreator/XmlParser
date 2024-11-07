@@ -19,7 +19,7 @@ namespace Xml.io.form
 
         public MainForm()
         {
-            string projectRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..");
+            string projectRootPath = AppDomain.CurrentDomain.BaseDirectory;
             string databasePath = Path.Combine(projectRootPath, "database.db");
             string xsltPath = Path.Combine(projectRootPath, "template.xslt");
 

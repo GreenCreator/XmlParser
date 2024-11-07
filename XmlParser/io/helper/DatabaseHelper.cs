@@ -13,7 +13,7 @@ namespace Xml.io.helper
 
         private void InitializeDatabase()
         {
-            string projectRootPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..", "..", "..");
+            string projectRootPath = AppDomain.CurrentDomain.BaseDirectory;
             projectRootPath = Path.GetFullPath(projectRootPath);
 
             string databasePath = Path.Combine(projectRootPath, "database.db");

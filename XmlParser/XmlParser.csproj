@@ -3,9 +3,14 @@
         <OutputType>WinExe</OutputType>
         <TargetFramework>net6.0-windows</TargetFramework>
         <UseWindowsForms>true</UseWindowsForms>
-        <RootNamespace>XmlToDB</RootNamespace>
+        <RootNamespace>XmlParser</RootNamespace>
     </PropertyGroup>
     <ItemGroup>
       <PackageReference Include="System.Data.SQLite" Version="1.0.119" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Update="template.xslt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
     </ItemGroup>
 </Project>
