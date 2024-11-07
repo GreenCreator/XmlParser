@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Files";
+}
+
+<h1>XML Content</h1>
+
+@if (ViewBag.TransformedHtml != null)
+{
+    <div>@Html.Raw(ViewBag.TransformedHtml)</div>
+}
+else
+{
+    <p>No content to display.</p>
+}

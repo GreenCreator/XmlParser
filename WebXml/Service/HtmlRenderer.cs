@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.IO;
-using System.Windows.Forms;
-using System.Xml;
+﻿using System.Xml;
 using System.Xml.Xsl;
 
 namespace Xml.io.controller;
@@ -15,7 +12,7 @@ public class HtmlRenderer
         _xsltPath = xsltPath;
     }
 
-    public void RenderHtml(Dictionary<string, string> attributes, WebBrowser webBrowser)
+    public string RenderHtml(Dictionary<string, string> attributes)
     {
         var xml = new XmlDocument();
         var root = xml.CreateElement("Root");
@@ -31,12 +28,11 @@ public class HtmlRenderer
         var xslt = new XslCompiledTransform();
         xslt.Load(_xsltPath);
 
-        string tempHtmlPath = Path.Combine(Path.GetTempPath(), "transformed.html");
-        using (var writer = XmlWriter.Create(tempHtmlPath, xslt.OutputSettings))
+        using (var stringWriter = new StringWriter())
+        using (var xmlWriter = XmlWriter.Create(stringWriter, xslt.OutputSettings))
         {
-            xslt.Transform(xml, writer);
+            xslt.Transform(xml, xmlWriter);
+            return stringWriter.ToString();
         }
-
-        webBrowser.Navigate(tempHtmlPath);
     }
 }

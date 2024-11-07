@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Welcome to the Xml Parser</h1>
+
+<p>This is the main page of the application. From here, you can upload XML files and view uploaded files.</p>
+
+<a href="@Url.Action("Upload", "Files")" class="btn btn-primary">Upload New File</a>
+<a href="@Url.Action("Index", "Files")" class="btn btn-secondary">View Uploaded Files</a>

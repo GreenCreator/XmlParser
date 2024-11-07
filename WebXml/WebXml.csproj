@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Include="wwwroot\template.xslt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="System.Windows.Forms">
+        <HintPath>C:\Program Files\dotnet\shared\Microsoft.WindowsDesktop.App\6.0.35\System.Windows.Forms.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Stub.System.Data.SQLite.Core.NetStandard" Version="1.0.119" />
+    </ItemGroup>
+
+</Project>

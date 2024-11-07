@@ -11,7 +11,7 @@ public class DataAccess
 
     public DataAccess(string databasePath)
     {
-        new DatabaseHelper();
+        new DatabaseHelper(databasePath);
         _databasePath = databasePath;
     }
 

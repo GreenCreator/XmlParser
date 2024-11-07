@@ -6,18 +6,13 @@ namespace Xml.io.helper
 {
     public class DatabaseHelper
     {
-        public DatabaseHelper()
+        public DatabaseHelper(string path)
         {
-            InitializeDatabase();
+            InitializeDatabase(path);
         }
 
-        private void InitializeDatabase()
+        private void InitializeDatabase(string databasePath)
         {
-            string projectRootPath = AppDomain.CurrentDomain.BaseDirectory;
-            projectRootPath = Path.GetFullPath(projectRootPath);
-
-            string databasePath = Path.Combine(projectRootPath, "database.db");
-
             if (!File.Exists(databasePath))
             {
                 using (var connection = new SQLiteConnection($"Data Source={databasePath}"))
